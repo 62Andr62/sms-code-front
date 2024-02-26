@@ -1,5 +1,5 @@
 import HelloWorld from '../components/HelloWorld.vue'
-import smsCreate from '../components/smsCreate'
+import SmsCreate from '../components/SmsCreate'
 const routes = [
   {
     path: '/',
@@ -8,8 +8,8 @@ const routes = [
   },
   {
     path: '/sms/create',
-    name: 'smsCreate',
-    component: smsCreate
+    name: 'SmsCreate',
+    component: SmsCreate
   }
 ]
 

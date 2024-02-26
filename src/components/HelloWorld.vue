@@ -6,10 +6,7 @@
 
 <script>
 export default {
-  props: {
-    msg: String
-  },
-  data () {
+  data: function () {
     return {
       showButton: true,
       code: ''
@@ -36,15 +33,6 @@ export default {
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.generation {
-  background-color: rgb(240, 46, 46);
-  color: aqua;
-  font-size: 32px;
-}
-.generation:hover {
-  cursor: pointer;
-  border-radius: 10px
-};
+<style>
 </style>
+<!-- Add "scoped" attribute to limit CSS to this component only -->

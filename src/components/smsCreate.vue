@@ -18,8 +18,8 @@ import { validationMixin } from 'vuelidate'
 import { required, minLength, maxLength, numeric } from 'vuelidate/lib/validators'
 export default {
   mixins: [validationMixin],
-  name: 'App',
-  data () {
+  name: 'smsCreate',
+  data: function () {
     return {
       form: {
         login: ''
@@ -58,15 +58,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.send {
-  border-radius: 9px;
-  color: rgba(134, 6, 246, 0.909);
-  cursor: pointer;
-}
-.invalid {
-  border-color: red;
-  text-decoration: dashed;
-}
-</style>

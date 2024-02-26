@@ -1,16 +1,17 @@
-import { mount } from '@vue/test-utils'
-import HelloWorld from './HelloWorld.vue'
+import { shallowMount } from '@vue/test-utils';
+import HelloWorld from '../HelloWorld';
+import { expect } from 'chai';
 
 describe('HelloWorld', () => {
-  test('отображается кнопка, которая вызывает метод test', async () => {
-    const wrapper = mount(HelloWorld)
+  it('отображается кнопка, которая вызывает метод test', () => {
+    const wrapper = shallowMount(HelloWorld)
     
     // Проверяем, что кнопка отображается
     const button = wrapper.find('.generation')
     expect(button.exists()).toBe(true)
 
     // Нажимаем на кнопку
-    await button.trigger('click')
+    button.trigger('click')
 
     // Проверяем, что свойство showbutton изменилось на false
     expect(wrapper.vm.showbutton).toBe(false)
